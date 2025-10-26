@@ -57,20 +57,46 @@ const AboutUsSection = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
             >
-                <div className="absolute bottom-0 right-0 w-[400px] h-[500px] opacity-80 pointer-events-none">
-                    <img src="bg/Samurai.jpeg" alt="Samurai" className="w-full h-full object-contain" /> 
-                </div>
+                <motion.div
+                    className="absolute w-40 h-56 rounded-4xl bg-(--accent)/70 shadow-lg backdrop-blur-sm"
+                    animate={{
+                        y: [0, -10, 0],
+                        scale: [1, 1.05, 1],
+                        opacity: [0.9, 1, 0.9],
+                    }}
+                    transition={{
+                        duration: 6,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                    }}
+                    style={{ top: "20%", left: "10%" }}
+                />
+                <motion.div
+                    className="absolute w-36 h-48 rounded-4xl bg-(--mist)/70 shadow-md backdrop-blur-md"
+                    animate={{
+                        y: [0, -20, 0],
+                        scale: [1, 1.06, 1],
+                        opacity: [0.9, 1, 0.9],
+                    }}
+                    transition={{
+                        duration: 7,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                        delay: 1,
+                    }}
+                    style={{ top: "50%", left: "60%" }}
+                />
 
                 <motion.div
                     whileHover={{ scale: 1.05, rotate: 2 }}
                     transition={{ duration: 0.4 }}
-                    className="relative z-10 w-[220px] h-[260px] rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(255,255,255,0.1)] backdrop-blur-sm"
+                    className="relative z-10 w-[200px] h-[200px] rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(255,255,255,0.1)] backdrop-blur-sm"
                     style={{
                         background:
                             "linear-gradient(to bottom right, rgba(255,255,255,0.05), rgba(255,255,255,0.02))",
                     }}
                 >
-                     <img src="ME.jpg" alt="Master Gen" className="w-full h-full object-hover" />
+                    <img src="ME.jpg" alt="Master Gen" className="w-full h-full object-hover" />
                 </motion.div>
             </motion.div>
 
