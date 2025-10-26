@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const HomeSection = () => {
     return (
@@ -9,12 +8,10 @@ const HomeSection = () => {
             id="home"
             className="relative w-full h-screen md:h-[90vh] overflow-hidden flex flex-col md:flex-row items-center justify-center md:justify-between px-6 sm:px-12 bg-transparent text-[var(--foreground)]"
         >
-            {/* Background mist overlay */}
             <div className="absolute inset-0 bg-(--mist)/15 backdrop-blur-[1px]" />
 
-            {/* Floating petals simulation (simple CSS animation fallback) */}
             <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
-                {Array.from({ length: 12 }).map((_, i) => (
+                {typeof window !== 'undefined' && Array.from({ length: 12 }).map((_, i) => (
                     <motion.span
                         key={i}
                         className="absolute w-3 h-3 bg-(--accent) rounded-full opacity-60"
