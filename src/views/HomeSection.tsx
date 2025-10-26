@@ -6,7 +6,7 @@ const HomeSection = () => {
     return (
         <section
             id="home"
-            className="relative w-full h-screen md:h-[90vh] overflow-hidden flex flex-col md:flex-row items-center justify-center md:justify-between px-6 sm:px-12 bg-transparent text-[var(--foreground)]"
+            className="relative w-full h-screen md:h-[90vh] overflow-hidden flex flex-col md:flex-row items-center justify-center md:justify-between px-6 sm:px-12 bg-transparent text-(--foreground)"
         >
             <div className="absolute inset-0 bg-(--mist)/15 backdrop-blur-[1px]" />
 

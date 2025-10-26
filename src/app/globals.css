@@ -42,7 +42,9 @@
 .font-hand {
   font-family: "Edu AU VIC WA NT Hand", cursive;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .font-rubik {
   font-family: "Rubik Vinyl", system-ui;
 }

@@ -1,3 +1,4 @@
+import AboutUsSection from "@/views/AboutUsSection";
 import HomeSection from "@/views/HomeSection";
 
 export default function Home() {
@@ -5,6 +6,9 @@ export default function Home() {
     <div className="flex-col justify-center items-center w-full h-auto">
       <div id="home">
         <HomeSection />
+      </div>
+      <div id="about">
+        <AboutUsSection />
       </div>
     </div>
   );
