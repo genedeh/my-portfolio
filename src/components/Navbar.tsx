@@ -35,7 +35,7 @@ const Navbar = () => {
             transition={{ type: "spring", stiffness: 80, damping: 12 }}
             className="fixed top-2 left-0 z-50 font-sans w-full"
         >
-            <div className="w-full mx-auto px-6 sm:px-8 flex justify-between items-center h-16 bg-transparent backdrop-blur-md">
+            <div className="w-full mx-auto px-6 sm:px-8 flex justify-between items-center h-16 bg-transparent ">
                 <div className="flex items-center space-x-3 cursor-pointer select-none">
                     <div className="w-14 h-10 bg-(--accent) text-(--background) rounded-lg flex items-center justify-center font-bold text-lg shadow-md">
                         KID
@@ -45,7 +45,7 @@ const Navbar = () => {
                     </h1>
                 </div>
 
-                <ul className="hidden md:flex space-x-10 text-(--foreground) relative">
+                <ul className="hidden md:flex space-x-10 text-black relative">
                     {navItems.map((item, index) => (
                         <motion.li
                             key={item.name}

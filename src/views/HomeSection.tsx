@@ -8,7 +8,7 @@ const HomeSection = () => {
             id="home"
             className="relative w-full h-screen md:h-[90vh] overflow-hidden flex flex-col md:flex-row items-center justify-center md:justify-between px-6 sm:px-12 bg-transparent text-(--foreground)"
         >
-            <div className="absolute inset-0 bg-(--mist)/15 backdrop-blur-[1px]" />
+            {/* <div className="absolute inset-0 bg-(--mist)/15 backdrop-blur-[1px" /> */}
 
             <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
                 {typeof window !== 'undefined' && Array.from({ length: 12 }).map((_, i) => (
@@ -53,7 +53,7 @@ const HomeSection = () => {
                 </motion.h1>
 
                 <motion.p
-                    className="text-lg sm:text-xl opacity-90 leading-relaxed"
+                    className="text-lg text-black sm:text-xl opacity-90 leading-relaxed"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.8, duration: 1 }}
@@ -72,7 +72,7 @@ const HomeSection = () => {
                     <button className="px-6 py-2 cursor-pointer bg-(--accent) text-(--background) rounded-full shadow-md hover:bg-(--accent-strong) transition-all duration-300">
                         Explore My Work
                     </button>
-                    <button className="px-6 py-2 cursor-pointer border border-(--accent) rounded-full hover:bg-(--accent) hover:text-(--background) transition-all duration-300">
+                    <button className="px-6 py-2 cursor-pointer border  text-white border-(--accent) rounded-full hover:bg-(--accent) hover:text-(--background) transition-all duration-300">
                         Contact Me
                     </button>
                 </motion.div>
@@ -117,7 +117,7 @@ const HomeSection = () => {
                     />
 
                     <motion.div
-                        className="absolute w-36 h-48 rounded-4xl bg-(--mist)/70 shadow-md backdrop-blur-md"
+                        className="absolute w-36 h-48 rounded-4xl bg-(--background)/90 shadow-md backdrop-blur-md"
                         animate={{
                             y: [0, -20, 0],
                             scale: [1, 1.06, 1],
