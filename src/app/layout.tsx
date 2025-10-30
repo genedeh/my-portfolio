@@ -26,15 +26,13 @@ export default function RootLayout({
         />
       </head>
 
-      <body className="global-font min-h-screen relative overflow-x-hidden">
-        <PetalBackground count={40} />
 
-        {/* Misty overlay gradient */}
-        <div className="fixed inset-0 -z-10 bg-linear-to-br from-[rgba(252,7,7,0.15)] via-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.2)] pointer-events-none" />
+      <body className="global-font min-h-screen pt-16 bg-linear-to-br from-red-200 via-white to-gray-200">
 
         <Navbar />
+        <PetalBackground count={40} />
 
-        <main className="relative z-10 pt-16">
+        <main>
           {children}
         </main>
 

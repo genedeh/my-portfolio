@@ -33,19 +33,24 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", stiffness: 80, damping: 12 }}
-            className="fixed top-2 left-0 z-50 font-sans w-full"
+            className="fixed top-0 left-0 w-full z-50 scroll-smooth"
         >
-            <div className="w-full mx-auto px-6 sm:px-8 flex justify-between items-center h-16 bg-transparent ">
-                <div className="flex items-center space-x-3 cursor-pointer select-none">
-                    <div className="w-14 h-10 bg-(--accent) text-(--background) rounded-lg flex items-center justify-center font-bold text-lg shadow-md">
-                        KID
+            <div className="w-full mx-auto px-6 sm:px-8 flex justify-between items-center h-16 rounded-ful backdrop-blur-sm">
+                <motion.h1
+                    whileHover={{ scale: 1.05 }}
+                    className="text-2xl font-semibold text-(--foreground) cursor-pointer"
+                >
+                    <div className="flex items-center space-x-3 cursor-pointer select-none">
+                        <div className="w-14 h-10 bg-(--accent) text-(--background) rounded-lg flex items-center justify-center font-bold text-lg shadow-md">
+                            KID
+                        </div>
+                        <h1 className="text-xl font-bold text-(--foreground)">
+                            Chaos <span className="text-(--accent-strong)">Portfolio</span>
+                        </h1>
                     </div>
-                    <h1 className="text-xl font-bold text-(--foreground)">
-                        Chaos <span className="text-(--accent-strong)">Portfolio</span>
-                    </h1>
-                </div>
+                </motion.h1>
 
-                <ul className="hidden md:flex space-x-10 text-black relative">
+                <ul className="hidden md:flex space-x-10 text-(--foreground-light) relative">
                     {navItems.map((item, index) => (
                         <motion.li
                             key={item.name}
@@ -53,7 +58,10 @@ const Navbar = () => {
                             onHoverEnd={() => setHovered(null)}
                             whileHover={{ y: -2, scale: 1.05 }}
                             transition={{ type: "spring", stiffness: 250, damping: 15 }}
-                            className={`relative cursor-pointer transition-colors duration-200 ${hovered === index && 'text-(--accent-strong)'} ${item.link === hash ? "text-(--accent) font-semibold" : ""
+                            className={`relative cursor-pointer transition-colors duration-200 ${hovered === index && "text-(--accent-soft)"
+                                } ${item.link === hash
+                                    ? "text-(--accent) font-semibold"
+                                    : "hover:text-(--accent-strong)"
                                 }`}
                         >
                             <a href={item.link} className="flex flex-col items-center">
@@ -66,7 +74,6 @@ const Navbar = () => {
                                         transition={{ type: "spring", stiffness: 300, damping: 20 }}
                                     />
                                 )}
-
                             </a>
                         </motion.li>
                     ))}
@@ -90,13 +97,10 @@ const Navbar = () => {
                         animate={{ x: 0 }}
                         exit={{ x: "100%" }}
                         transition={{ type: "spring", stiffness: 70, damping: 12 }}
-                        className="fixed top-0 right-0 h-full w-64 bg-(--background)/90 backdrop-blur-xl shadow-2xl border-l border-(--mist)/30 md:hidden flex flex-col"
+                        className="fixed top-0 right-0 h-full w-64 bg-(--surface-dark) backdrop-blur-xl shadow-2xl border-l border-(--mist)/20 md:hidden flex flex-col"
                     >
                         <div className="flex justify-end p-4">
-                            <motion.button
-                                whileTap={{ scale: 0.9 }}
-                                onClick={() => setIsOpen(false)}
-                            >
+                            <motion.button whileTap={{ scale: 0.9 }} onClick={() => setIsOpen(false)}>
                                 <FiX size={26} className="text-(--foreground)" />
                             </motion.button>
                         </div>
@@ -107,12 +111,14 @@ const Navbar = () => {
                                     key={item.name}
                                     whileHover={{ scale: 1.05, x: 6 }}
                                     transition={{ type: "spring", stiffness: 250, damping: 15 }}
-                                    className={`cursor-pointer ${item.link === hash ? "text-(--accent) font-semibold" : ""
+                                    className={`cursor-pointer ${item.link === hash
+                                            ? "text-(--accent) font-semibold"
+                                            : "hover:text-(--accent-soft)"
                                         }`}
                                 >
                                     <a
                                         href={item.link}
-                                        className="flex flex-col transition-all duration-200"
+                                        className="flex flex-col transition-all text-white duration-200"
                                         onClick={() => setIsOpen(false)}
                                     >
                                         {item.name}
@@ -126,6 +132,7 @@ const Navbar = () => {
             </AnimatePresence>
         </motion.nav>
     );
+
 };
 
 export default Navbar;
