@@ -55,7 +55,7 @@ export default function AboutSection() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.4, duration: 0.8 }}
-                    className="flex justify-center gap-6 mt-4 w-auto bg-white/20 backdrop-blur-md rounded-3xl shadow-xl p-4"
+                    className="flex justify-center gap-6 mt-4 w-auto bg-white/20 rounded-3xl shadow-xl p-4"
                 >
                     <a href="https://wa.me/+2348129674178" target="_blank" rel="noreferrer">
                         <FaWhatsapp className="text-3xl text-green-500 hover:scale-110 transition-all duration-300" />
@@ -85,59 +85,59 @@ export default function AboutSection() {
                         transition={{ delay: 0.3, duration: 0.8 }}
                         className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 p-4 place-items-center bg-transparent"
                     >
-                        <div className="bg-blue-200/50 backdrop-blur-md rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
+                        <div className="bg-blue-200/50 rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
                             <FaReact className="text-blue-400 hover:scale-125 transition-all duration-300" size={30} />
                         </div>
 
-                        <div className="bg-sky-200/50 backdrop-blur-md rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
+                        <div className="bg-sky-200/50 rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
                             <TbBrandReactNative className="text-sky-500 hover:scale-125 transition-all duration-300" size={30} />
                         </div>
 
-                        <div className="bg-gray-200/50 backdrop-blur-md rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
+                        <div className="bg-gray-200/50 rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
                             <FaGithub className="text-gray-800 hover:scale-125 transition-all duration-300" size={30} />
                         </div>
 
-                        <div className="bg-purple-200/50 backdrop-blur-md rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
+                        <div className="bg-purple-200/50 rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
                             <SiFigma className="text-purple-500 hover:scale-125 transition-all duration-300" size={30} />
                         </div>
 
-                        <div className="bg-orange-200/50 backdrop-blur-md rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
+                        <div className="bg-orange-200/50 rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
                             <FaGitAlt className="text-orange-600 hover:scale-125 transition-all duration-300" size={30} />
                         </div>
 
-                        <div className="bg-yellow-100/50 backdrop-blur-md rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
+                        <div className="bg-yellow-100/50 rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
                             <FaPython className="text-yellow-500 hover:scale-125 transition-all duration-300" size={30} />
                         </div>
 
-                        <div className="bg-amber-100/50 backdrop-blur-md rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
+                        <div className="bg-amber-100/50 rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
                             <SiJavascript className="text-yellow-400 hover:scale-125 transition-all duration-300" size={30} />
                         </div>
 
-                        <div className="bg-green-200/50 backdrop-blur-md rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
+                        <div className="bg-green-200/50 rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
                             <SiDjango className="text-green-700 hover:scale-125 transition-all duration-300" size={30} />
                         </div>
 
-                        <div className="bg-indigo-200/50 backdrop-blur-md rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
+                        <div className="bg-indigo-200/50 rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
                             <SiLua className="text-indigo-600 hover:scale-125 transition-all duration-300" size={30} />
                         </div>
 
-                        <div className="bg-blue-100/50 backdrop-blur-md rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
+                        <div className="bg-blue-100/50 rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
                             <SiTypescript className="text-blue-600 hover:scale-125 transition-all duration-300" size={30} />
                         </div>
 
-                        <div className="bg-neutral-200/50 backdrop-blur-md rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
+                        <div className="bg-neutral-200/50 rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
                             <SiNextdotjs className="text-white dark:text-white hover:scale-125 transition-all duration-300" size={30} />
                         </div>
 
-                        <div className="bg-orange-100/50 backdrop-blur-md rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
+                        <div className="bg-orange-100/50 rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
                             <FaHtml5 className="text-orange-500 hover:scale-125 transition-all duration-300" size={30} />
                         </div>
 
-                        <div className="bg-sky-100/50 backdrop-blur-md rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
+                        <div className="bg-sky-100/50 rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
                             <FaCss3Alt className="text-blue-500 hover:scale-125 transition-all duration-300" size={30} />
                         </div>
 
-                        <div className="bg-cyan-100/50 backdrop-blur-md rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
+                        <div className="bg-cyan-100/50 rounded-3xl shadow-xl p-2 w-[62px] h-[62px] flex items-center justify-center">
                             <SiTailwindcss className="text-cyan-500 hover:scale-125 transition-all duration-300" size={30} />
                         </div>
                     </motion.div>
